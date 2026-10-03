@@ -23,6 +23,7 @@ import {
   Clock,
   ArrowRight,
 } from "lucide-react";
+import { QuickListForm } from "@/components/shared/quick-list-form";
 
 /* ───────────────────────────── mock data ───────────────────────────── */
 
@@ -68,7 +69,7 @@ export default async function HomePage() {
     <div>
       <Hero locations={locations} />
 
-      {/* ── 1.5. Parent Company Banner ────────────────────────────────── */}
+      {/* ── 1.25. Parent Company Banner ───────────────────────────────── */}
       <div className="bg-slate-900 border-t border-slate-800 py-3 sm:py-4 relative z-20">
         <div className="mx-auto max-w-7xl px-4 text-center">
           <p className="text-xs sm:text-sm font-medium text-slate-300">
@@ -79,6 +80,10 @@ export default async function HomePage() {
           </p>
         </div>
       </div>
+
+      {/* ── 1.5. Quick List Form ──────────────────────────────────────── */}
+      <QuickListForm locations={locations} />
+
 
       {/* ── 2. Featured Listings ────────────────────────────────── */}
       <section className="mx-auto max-w-7xl px-4 py-14 md:px-6 md:py-20">

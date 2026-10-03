@@ -63,9 +63,13 @@ type FormValues = z.infer<typeof formSchema>;
 
 import { getLocations } from "@/app/actions/locations";
 
-export default function ListPropertyPage() {
+import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
+
+function ListPropertyFormContent() {
   const [isSubmitted, setIsSubmitted] = React.useState(false);
   const [locations, setLocations] = React.useState<any[]>([]);
+  const searchParams = useSearchParams();
 
   React.useEffect(() => {
     getLocations().then(setLocations);
@@ -74,11 +78,11 @@ export default function ListPropertyPage() {
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      ownerName: "",
-      phone: "",
+      ownerName: searchParams?.get("ownerName") || "",
+      phone: searchParams?.get("phone") || "",
       email: "",
       propertyType: undefined,
-      sector: "",
+      sector: searchParams?.get("sector") || "",
       subSector: "",
       address: "",
       expectedRent: "",
@@ -312,7 +316,7 @@ export default function ListPropertyPage() {
                       </FormItem>
                     )}
                   />
-                  {form.watch("sector") && locations.find(l => l.name === form.watch("sector"))?.subSectors?.length > 0 && (
+                  {form.watch("sector") && (locations.find(l => l.name === form.watch("sector"))?.subSectors?.length ?? 0) > 0 && (
                     <FormField
                       control={form.control}
                       name="subSector"
@@ -456,5 +460,13 @@ export default function ListPropertyPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ListPropertyPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen py-32 flex items-center justify-center"><Loader2 className="animate-spin text-brand-accent size-10" /></div>}>
+      <ListPropertyFormContent />
+    </Suspense>
   );
 }
