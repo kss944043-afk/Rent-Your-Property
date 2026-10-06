@@ -30,11 +30,24 @@ export function Navbar() {
   const [scrolled, setScrolled] = React.useState(false);
 
   React.useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 10);
+    const handleScroll = () => {
+      if (pathname === "/") {
+        const hero = document.querySelector('main section');
+        if (hero) {
+          // Change to white when we've scrolled past the hero (minus navbar height roughly)
+          const threshold = hero.clientHeight - 80;
+          setScrolled(window.scrollY > threshold);
+        } else {
+          setScrolled(window.scrollY > 10);
+        }
+      } else {
+        setScrolled(window.scrollY > 10);
+      }
+    };
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [pathname]);
 
   const isHome = pathname === "/";
 
@@ -45,7 +58,7 @@ export function Navbar() {
           "w-full transition-all duration-300 border-b",
           (isHome && !scrolled)
             ? "bg-transparent border-transparent"
-            : "bg-background/95 backdrop-blur-md border-border/50 shadow-sm"
+            : "bg-white shadow-sm border-slate-200"
         )}
       >
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:h-20 md:px-6">
