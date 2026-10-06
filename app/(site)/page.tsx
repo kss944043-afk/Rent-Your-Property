@@ -73,8 +73,8 @@ export default async function HomePage() {
       <div className="bg-slate-900 border-t border-slate-800 py-3 sm:py-4 relative z-20">
         <div className="mx-auto max-w-7xl px-4 text-center">
           <p className="text-xs sm:text-sm font-medium text-slate-300">
-            Proudly part of the <a href="https://nextavenue.pk" target="_blank" rel="noopener noreferrer" className="font-bold text-white hover:text-primary transition-colors underline underline-offset-4 decoration-slate-600 hover:decoration-primary">Next Avenue</a> family. Looking to buy or sell instead? 
-            <a href="https://nextavenue.pk" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 font-bold ml-1.5 inline-flex items-center">
+            Proudly part of the <a href="https://www.nextavenuepk.com/" target="_blank" rel="noopener noreferrer" className="font-bold text-white hover:text-primary transition-colors underline underline-offset-4 decoration-slate-600 hover:decoration-primary">Next Avenue</a> family. Looking to buy or sell instead? 
+            <a href="https://www.nextavenuepk.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 font-bold ml-1.5 inline-flex items-center">
               Visit Next Avenue <ArrowRight className="ml-1 size-3" />
             </a>
           </p>
@@ -166,7 +166,7 @@ export default async function HomePage() {
                 </p>
                 
                 <p className="border-l-2 border-primary/30 pl-4 py-1 italic text-sm text-slate-400 mt-6">
-                  As the dedicated rental platform of the <a href="https://nextavenue.pk" target="_blank" rel="noopener noreferrer" className="font-bold text-slate-700 hover:text-primary transition-colors underline underline-offset-4">Next Avenue</a> family, we bring the same trust, transparency, and excellence you expect from Pakistan's premier real estate network.
+                  As the dedicated rental platform of the <a href="https://www.nextavenuepk.com/" target="_blank" rel="noopener noreferrer" className="font-bold text-slate-700 hover:text-primary transition-colors underline underline-offset-4">Next Avenue</a> family, we bring the same trust, transparency, and excellence you expect from Pakistan's premier real estate network.
                 </p>
               </div>
 

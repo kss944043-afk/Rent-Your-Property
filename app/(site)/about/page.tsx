@@ -60,7 +60,7 @@ export default function AboutPage() {
                 Rent Your Property was built with a singular vision: to revolutionize the rental market by removing the friction, hidden fees, and uncertainty that have traditionally plagued it.
               </p>
               <p>
-                As a proud member of the <a href="https://nextavenue.pk" target="_blank" rel="noopener noreferrer" className="font-bold text-slate-900 hover:text-primary transition-colors underline underline-offset-4 decoration-slate-200 hover:decoration-primary">Next Avenue</a> family of companies, we bring decades of industry expertise, an unshakeable reputation, and a massive network of verified users to the rental ecosystem.
+                As a proud member of the <a href="https://www.nextavenuepk.com/" target="_blank" rel="noopener noreferrer" className="font-bold text-slate-900 hover:text-primary transition-colors underline underline-offset-4 decoration-slate-200 hover:decoration-primary">Next Avenue</a> family of companies, we bring decades of industry expertise, an unshakeable reputation, and a massive network of verified users to the rental ecosystem.
               </p>
               <p>
                 Whether you are a landlord looking for peace of mind or a tenant searching for a place to call home, we combine the cutting-edge technology of a modern startup with the profound market trust of Next Avenue.

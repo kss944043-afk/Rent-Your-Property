@@ -106,7 +106,7 @@ export function Navbar() {
           {/* Desktop CTA — hidden below md */}
           <div className="hidden items-center gap-3 md:flex">
             <Button variant="outline" className={cn("border-white/20 bg-white/10 hover:bg-white/20 text-white backdrop-blur-md", !(isHome && !scrolled) && "border-primary/20 bg-primary/5 hover:bg-primary/10 text-primary")} asChild>
-              <a href="https://nextavenue.pk" target="_blank" rel="noopener noreferrer">Sell Your Property</a>
+              <a href="https://www.nextavenuepk.com/sell" target="_blank" rel="noopener noreferrer">Sell Your Property</a>
             </Button>
             <Button variant="accent" className={cn((isHome && !scrolled) && "bg-white text-primary hover:bg-white/90")} asChild>
               <Link href="/list-property">Rent Your Property</Link>
@@ -161,7 +161,7 @@ export function Navbar() {
             <div className="border-t border-slate-100 bg-white/50 p-6 flex flex-col gap-3 pb-8">
               <SheetClose asChild>
                 <Button variant="outline" className="w-full h-12 rounded-xl font-bold border-slate-200 text-slate-700 hover:bg-slate-50 shadow-sm" asChild>
-                  <a href="https://nextavenue.pk" target="_blank" rel="noopener noreferrer">Sell Your Property</a>
+                  <a href="https://www.nextavenuepk.com/sell" target="_blank" rel="noopener noreferrer">Sell Your Property</a>
                 </Button>
               </SheetClose>
               <SheetClose asChild>

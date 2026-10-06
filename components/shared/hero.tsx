@@ -382,7 +382,7 @@ export function Hero({ locations = [] }: { locations?: any[] }) {
             <Button 
               type="button" 
               variant="outline" 
-              onClick={() => window.open('https://nextavenue.pk', '_blank')}
+              onClick={() => window.open('https://www.nextavenuepk.com/sell', '_blank')}
               className="h-12 flex-1 rounded-full border-white/20 bg-white/10 text-[11px] font-bold text-white shadow-xl backdrop-blur-md hover:bg-white/20 hover:text-white px-1 whitespace-normal leading-tight text-center"
             >
               Sell Property
