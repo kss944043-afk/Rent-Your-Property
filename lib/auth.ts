@@ -9,6 +9,11 @@ export const auth = betterAuth({
     provider: "pg",
     schema,
   }),
+  trustedOrigins: [
+    "https://rentyourproperty.pk",
+    "https://www.rentyourproperty.pk",
+    "http://localhost:3000"
+  ],
   emailAndPassword: {
     enabled: true,
   },
