@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     description: "Find or list rental properties with Rent Your Property.",
   },
   verification: {
-    google: "PLACEHOLDER_GOOGLE_SITE_VERIFICATION_ID",
+    google: "T-IztLxDhu-EQrbj2tfAMDku_o434LQCyY0RbWgnnuE",
   },
 };
 
