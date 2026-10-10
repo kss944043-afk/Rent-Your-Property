@@ -30,6 +30,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { CheckCircle2, Loader2, User, Home, FileText, ArrowRight } from "lucide-react";
+import { TermsModal } from "@/components/shared/terms-modal";
 
 // The validation schema
 const formSchema = z.object({
@@ -423,10 +424,11 @@ function ListPropertyFormContent() {
                       </FormLabel>
                       <p className="text-xs text-slate-500">
                         By submitting this property, you agree to our{" "}
-                        <Link href="/terms" className="text-primary hover:underline" target="_blank">
-                          Terms of Service
-                        </Link>{" "}
-                        and Privacy Policy.
+                        <TermsModal>
+                          <span className="text-brand-accent hover:underline font-bold cursor-pointer">
+                            Terms & Agreement
+                          </span>
+                        </TermsModal>.
                       </p>
                     </div>
                   </FormItem>
