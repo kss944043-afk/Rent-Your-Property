@@ -418,7 +418,7 @@ function ListPropertyFormContent() {
                         onCheckedChange={field.onChange}
                       />
                     </FormControl>
-                    <div className="space-y-1 leading-none">
+                    <div className="space-y-1.5 leading-none w-full">
                       <FormLabel className="text-sm font-medium text-slate-700 cursor-pointer">
                         I accept the Terms and Conditions
                       </FormLabel>
@@ -430,6 +430,7 @@ function ListPropertyFormContent() {
                           </span>
                         </TermsModal>.
                       </p>
+                      <FormMessage className="text-xs font-medium text-red-500" />
                     </div>
                   </FormItem>
                 )}
@@ -440,8 +441,13 @@ function ListPropertyFormContent() {
                 <Button
                   type="submit"
                   size="lg"
-                  className="group w-full h-14 rounded-xl text-base font-bold shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/30"
-                  disabled={form.formState.isSubmitting}
+                  className={cn(
+                    "group w-full h-14 rounded-xl text-base font-bold transition-all disabled:opacity-100",
+                    (!form.watch("acceptTerms") || form.formState.isSubmitting)
+                      ? "bg-slate-400 text-white cursor-not-allowed shadow-none hover:translate-y-0"
+                      : "bg-brand-accent text-white shadow-lg shadow-brand-accent/20 hover:-translate-y-0.5 hover:shadow-xl"
+                  )}
+                  disabled={form.formState.isSubmitting || !form.watch("acceptTerms")}
                 >
                   {form.formState.isSubmitting ? (
                     <>
