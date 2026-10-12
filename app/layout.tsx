@@ -64,9 +64,45 @@ export default async function RootLayout({
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     name: "Rent Your Property",
+    alternateName: ["RentYourProperty.pk", "Rent Your Property Pakistan"],
     url: "https://rentyourproperty.pk",
     logo: "https://rentyourproperty.pk/logo.png",
-    sameAs: [settings.facebook, settings.instagram, settings.twitter, settings.linkedin].filter(Boolean),
+    description: "Pakistan's dedicated online rental property platform for houses, apartments, portions, and commercial spaces across Islamabad and Rawalpindi.",
+    parentOrganization: {
+      "@type": "Organization",
+      name: "Next Avenue SMC Private Limited",
+      url: "https://www.nextavenuepk.com",
+    },
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Islamabad",
+      },
+      {
+        "@type": "City",
+        name: "Rawalpindi",
+      },
+      {
+        "@type": "Country",
+        name: "Pakistan",
+      },
+    ],
+    knowsAbout: [
+      "House for Rent in Islamabad",
+      "Apartment for Rent in Islamabad",
+      "Commercial Property for Rent in Islamabad",
+      "Portion for Rent in Islamabad",
+      "Islamabad Real Estate Rental Market",
+      "CDA Tenancy Regulations",
+      "Rental Yields in Pakistan"
+    ],
+    sameAs: [
+      "https://www.nextavenuepk.com",
+      settings.facebook,
+      settings.instagram,
+      settings.twitter,
+      settings.linkedin,
+    ].filter(Boolean),
     contactPoint: {
       "@type": "ContactPoint",
       telephone: settings.phone,

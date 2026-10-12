@@ -8,9 +8,21 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/admin/", "/api/"],
       },
-      // Explicitly ALLOW AI Bots on public routes to be included in answers
+      // Explicitly ALLOW AI Bots and Search Engines on public routes to be indexed and cited in answers
       {
-        userAgent: ["GPTBot", "ClaudeBot", "PerplexityBot", "Google-Extended", "CCBot"],
+        userAgent: [
+          "GPTBot",
+          "OAI-SearchBot",
+          "ClaudeBot",
+          "anthropic-ai",
+          "PerplexityBot",
+          "Google-Extended",
+          "GoogleOther",
+          "Applebot-Extended",
+          "Meta-ExternalAgent",
+          "cohere-ai",
+          "CCBot"
+        ],
         allow: "/",
         disallow: ["/admin/", "/api/"],
       }

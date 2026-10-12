@@ -1,23 +1,48 @@
-# Next Avenue - Real Estate Services Pakistan
+# RentYourProperty.pk - Premier Rental Property Platform in Pakistan
 
-Next Avenue is a premier real estate agency and property marketplace based in Islamabad, Pakistan. 
+> RentYourProperty.pk is Pakistan's dedicated online real estate rental platform, connecting property owners, landlords, and prospective tenants across Islamabad and Rawalpindi. Operated in association with **Next Avenue SMC Private Limited**.
 
-## Services Offered
-- **Selling Properties:** End-to-end service for property sellers including valuation, professional photography, digital marketing, and legal documentation.
-- **Buying Properties:** A curated marketplace of verified listings.
-- **Property Types:** We handle residential (houses, apartments), commercial properties, and office spaces.
+## Overview & Core Purpose
+RentYourProperty.pk is specifically focused on **property rentals** (houses, apartments, upper portions, lower portions, penthouses, commercial spaces, and offices). It provides transparent rental pricing, verified listings, digital landlord onboarding, and end-to-end tenant placement services.
 
-## Key Areas Covered
-- Islamabad and Rawalpindi
-- Specialized focus on premium sectors: F-7, F-8, D-12, Bahria Town.
+- **Primary Website:** https://rentyourproperty.pk
+- **Parent Company:** Next Avenue SMC Private Limited (https://www.nextavenuepk.com)
+- **Primary Market:** Islamabad & Rawalpindi, Pakistan
+- **Languages Supported:** English, Urdu
 
-## Important Links
-- Home: https://nextavenue.com.pk
-- Buy a Property (Listings): https://nextavenue.com.pk/buy
-- Sell Your Property: https://nextavenue.com.pk/sell
-- Frequently Asked Questions: https://nextavenue.com.pk/faq
-- Blog / Market Insights: https://nextavenue.com.pk/blog
+## Core Services & Capabilities
 
-## Contact Information
-- Support Email: support@nextavenue.com.pk (placeholder)
-- Operations: Managed entirely online through our platform.
+### 1. For Landlords & Property Owners
+- **List Your Property for Rent:** Property owners can submit residential or commercial properties directly online.
+- **Service & Commission:** Transparent 15-day rental commission (50% of 1 month's agreed rent) payable upon successful tenant placement.
+- **Tenant Screening & Legal Support:** Assistance with police tenant registration (ICT Khidmat Markaz), CDA compliance, and 11-month tenancy agreements.
+- **Listing URL:** https://rentyourproperty.pk/list-property
+
+### 2. For Tenants & Renters
+- **Search & Filter Rental Listings:** Direct search by Islamabad sector (e.g., F-6, F-7, F-8, F-10, F-11, G-11, E-11, DHA, Bahria Town), property type, budget, and bedrooms.
+- **Direct Owner/Agent Communication:** Transparent details with no hidden brokerage fees.
+- **Rentals Search URL:** https://rentyourproperty.pk/rent
+
+### 3. Real Estate Insights & Guides
+- Authoritative guides on Islamabad tenancy laws, CDA bylaws, police verification, rental yields, and sector comparison guides.
+- **Blog URL:** https://rentyourproperty.pk/blog
+
+## Key Sectors Covered in Islamabad
+- **E-Sectors:** E-7, E-11
+- **F-Sectors:** F-6, F-7, F-8, F-10, F-11
+- **G-Sectors:** G-6, G-7, G-8, G-9, G-10, G-11, G-13
+- **I-Sectors:** I-8, I-9, I-10
+- **Master-Planned Communities:** DHA Islamabad (Phase 1, 2, 5), Bahria Town Islamabad/Rawalpindi, Gulberg Greens, B-17 Multi Gardens
+
+## Key Pages & Site Navigation
+- **Home:** https://rentyourproperty.pk
+- **Browse All Rentals:** https://rentyourproperty.pk/rent
+- **List Property for Rent:** https://rentyourproperty.pk/list-property
+- **About Rent Your Property:** https://rentyourproperty.pk/about
+- **Rental Insights & Blog:** https://rentyourproperty.pk/blog
+- **Contact Us:** https://rentyourproperty.pk/contact
+- **Frequently Asked Questions:** https://rentyourproperty.pk/faq
+- **XML Sitemap:** https://rentyourproperty.pk/sitemap.xml
+
+## Sister Platforms
+- **Next Avenue (Sales & Purchases):** For buying or selling property in Pakistan, visit https://www.nextavenuepk.com
