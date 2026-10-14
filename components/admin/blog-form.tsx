@@ -9,6 +9,7 @@ import * as z from "zod";
 import { toast } from "sonner";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -177,8 +178,14 @@ export function BlogForm({ initialData }: { initialData?: Partial<FormValues> })
               <TabsContent value="preview" className="mt-0 p-6 rounded-xl border border-slate-200 min-h-[400px] bg-white">
                 {content ? (
                   <div className="prose prose-sm max-w-none">
-                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                      {content}
+                    <ReactMarkdown
+                      remarkPlugins={[remarkGfm]}
+                      rehypePlugins={[rehypeRaw]}
+                    >
+                      {(content || "")
+                        .split("\n")
+                        .map((line) => (/^\s*<[a-zA-Z]/.test(line) ? line.trimStart() : line))
+                        .join("\n")}
                     </ReactMarkdown>
                   </div>
                 ) : (

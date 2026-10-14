@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { format } from "date-fns";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 import { Metadata } from "next";
 import { ListingCard } from "@/components/shared/listing-card";
 import Link from "next/link";
@@ -127,8 +128,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
               {/* Prose Content */}
               <div className="prose prose-lg md:prose-xl max-w-none prose-slate prose-headings:font-heading prose-headings:font-black prose-headings:text-slate-900 prose-p:text-slate-600 prose-p:leading-loose prose-a:text-primary prose-a:font-bold hover:prose-a:text-primary/80 prose-li:text-slate-600">
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                  {post.content || ""}
+                <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
+                  rehypePlugins={[rehypeRaw]}
+                >
+                  {(post.content || "")
+                    .split("\n")
+                    .map((line) => (/^\s*<[a-zA-Z]/.test(line) ? line.trimStart() : line))
+                    .join("\n")}
                 </ReactMarkdown>
               </div>
             </div>
